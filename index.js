@@ -65,7 +65,6 @@ app.get('/info', (req, res) => {
     res.send('Phonebook has info for ' + people.length + ' people</br></br>' + Date(Date.now()).toString())
 })
 
-
 app.put('/api/persons/:id', (req, res, next) => {
     const body = req.body
     const person = {
